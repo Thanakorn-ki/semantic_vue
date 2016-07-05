@@ -1,16 +1,28 @@
 # semantic_vue
 
 > A Vue.js project
+
 > How to Setup jquery open build file build/webpack.dev.conf.js
 
- new webpack.ProvidePlugin({
-  $: "jquery",
-  jQuery: "jquery",
-  "window.jQuery": "jquery",
-  "semantic-ui": "semantic-ui",
-  semantic: "semantic-ui"
+copy to <br>
+ new webpack.ProvidePlugin({ <br>
+  $: "jquery", <br>
+  jQuery: "jquery",  <br>
+  "window.jQuery": "jquery", <br>
+  "semantic-ui": "semantic-ui", <br>
+  semantic: "semantic-ui" <br>
   })
-> ---------------------------------------------------------------
+
+Goto build/webpack.base.conf.js
+
+Copy to
+
+'semantic': path.resolve(__dirname,'../node_modules/semantic-ui/dist/semantic.min.js')
+
+And Copy
+
+/*globals $:false */ for .vue
+
 ## Build Setup
 
 ``` bash
