@@ -4,6 +4,8 @@
 
 > How to Setup jquery open build file build/webpack.dev.conf.js
 
+sudo npm install semantic-ui --save
+
 copy to <br>
  new webpack.ProvidePlugin({ <br>
   $: "jquery", <br>
