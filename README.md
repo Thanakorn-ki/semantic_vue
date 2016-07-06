@@ -3,8 +3,19 @@
 > A Vue.js project
 
 > How to Setup jquery open build file build/webpack.dev.conf.js
+# main.js
+
+import '../node_modules/semantic-ui/dist/semantic.min.css'
+
+import 'semantic'
+
+#file .vue
+
+/*globals $:false */
+
 
 sudo npm install semantic-ui --save
+
 
 copy to <br>
  new webpack.ProvidePlugin({ <br>
@@ -17,13 +28,10 @@ copy to <br>
 
 Goto build/webpack.base.conf.js
 
-Copy to
+Copy to in alias is json
 
 'semantic': path.resolve(__dirname,'../node_modules/semantic-ui/dist/semantic.min.js')
 
-And Copy
-
-/*globals $:false */ for .vue
 
 ## Build Setup
 
