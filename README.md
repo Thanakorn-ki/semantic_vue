@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-> How to Setup jquery open build file build/webpack.dev.conf.js
+
 # main.js
 
 import '../node_modules/semantic-ui/dist/semantic.min.css'
@@ -16,8 +16,9 @@ import 'semantic'
 
 sudo npm install semantic-ui --save
 
+> How to Setup jquery open build file build/webpack.dev.conf.js
 
-copy to <br>
+copy to build/webpack.dev.conf.js<br>
  new webpack.ProvidePlugin({ <br>
   $: "jquery", <br>
   jQuery: "jquery",  <br>
