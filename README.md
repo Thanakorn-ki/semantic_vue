@@ -1,38 +1,39 @@
-# semantic_vue
+# run-together2
+
+
+## SET SEMANTIC
+
+> File main.js
+
+```
+import '../node_modules/semantic-ui/dist/semantic.min.css'
+import 'semantic'
+```
+> File *.vue
+
+```
+/*globals $*/
+```
+### How to Setup jquery open build file
+> File /build/webpack.dev.conf.js copy that to plugins
+
+```
+new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery',
+  'window.jQuery': 'jquery',
+  'semantic-ui': 'semantic-ui',
+  semantic: 'semantic-ui'
+})
+```
+> File /build/webpack.base.conf.js copy to module.exports.resolve.alias
+
+```
+'semantic': path.resolve(__dirname,'../node_modules/semantic-ui/dist/semantic.min.js')
+```
+___
 
 > A Vue.js project
-
-
-# main.js
-
-import '../node_modules/semantic-ui/dist/semantic.min.css'
-
-import 'semantic'
-
-#file .vue
-
-/*globals $:false */
-
-
-sudo npm install semantic-ui --save
-
-> How to Setup jquery open build file build/webpack.dev.conf.js
-
-copy to build/webpack.dev.conf.js<br>
- new webpack.ProvidePlugin({ <br>
-  $: "jquery", <br>
-  jQuery: "jquery",  <br>
-  "window.jQuery": "jquery", <br>
-  "semantic-ui": "semantic-ui", <br>
-  semantic: "semantic-ui" <br>
-  })
-
-Goto build/webpack.base.conf.js
-
-Copy to in alias is json
-
-'semantic': path.resolve(__dirname,'../node_modules/semantic-ui/dist/semantic.min.js')
-
 
 ## Build Setup
 
