@@ -1,3 +1,6 @@
-export const changestatus = function ({ dispatch, state }, status) {
-  dispatch('INCREMENT', status)
+export const plus = function ({ commit }) {
+  commit('INCREMENT')
+}
+export const minus = function ({ commit }) {
+  commit('DECREMENT')
 }

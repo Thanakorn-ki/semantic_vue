@@ -1,25 +1,20 @@
 <template lang="html">
- test 2s
+ <div class="disabled">
+   <button @click="plus">+</button><button @click="minus">-</button>{{getCount}}
+ </div>
 </template>
 
 <script>
-import { changestatus } from '../vuex/actions'
+import { mapGetters, mapActions } from 'vuex'
 export default {
-  vuex: {
-    actions: {
-      states: changestatus
-    }
-  },
-  data: function () {
-    return {
-    }
-  },
-  computed: {},
-  ready: function () {
-    this.states(2)
-  },
-  attached: function () {},
-  methods: {},
+  computed: mapGetters([
+    'getCount'
+  ]),
+  methods:
+  mapActions([
+    'plus',
+    'minus'
+  ]),
   components: {}
 }
 </script>
