@@ -1,4 +1,4 @@
-# test semantic-vue by thanakorn
+# test semantic-vue by thanakorn.k
 
 
 ## SET SEMANTIC
